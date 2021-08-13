@@ -1,0 +1,10 @@
+.card{
+    width:auto;
+    height: auto;
+    transition: .5s;
+    box-shadow: blue 5px 5px;
+    border-left:px solid white;
+}
+.card:hover{
+   transform: translateX(10px) translateY(-10px);
+}
