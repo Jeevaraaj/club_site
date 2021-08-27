@@ -1,0 +1,250 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="fevicon.ico" type="image/icon"> 
+    <link rel="stylesheet" href="w3c.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Charm&family=Cinzel+Decorative&family=Crimson+Pro&family=MonteCarlo&family=Niconne&family=Rancho&family=Rye&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+      .mySlides{display: none;}
+      .w3-left, .w3-right, .w3-badge {cursor:pointer}
+      .w3-badge {height:13px;width:13px;padding:0}
+    </style>
+    <title>Ada's club</title>
+  </head>
+  <body>
+    <script src="slideshow.js" defer></script>
+    <div class="background panel" data-color="white">
+       <!--ada's club icon-->
+       <div  >
+         <img  id="gif1" onmouseover="giffunction()" onmouseout="imgfunction()" src="adaimage.jpg" height="100px" />
+       </div>  
+       <!--search button-->
+       <form class="search" action=".php">
+         <input type="text" placeholder="Search.." >
+         <button type="submit"><i class="fa fa-search"></i></button>
+       </form>
+       <!--navigation bar-->
+       <nav class="navbar navbar-expand-lg iconbox "id="navbar1" >
+         <div  >
+            <a class="navbar-brand home" href="#" >
+              <i class="fa fa-home" ></i> 
+            </a>
+          </div>
+         
+         <button class="navbar-toggler navbar-light navbar-default" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon "></span>
+         </button>
+          <div class="collapse navbar-collapse " id="mainNav">
+            <ul class="navbar-nav ml-auto nav-fill">
+              <li class="nav-item px-4 dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Activities</a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="servicesDropdown">
+                  <a class="dropdown-item" href="#">Register now!</a>
+                  <a class="dropdown-item" href="#">Ask your query </a>
+                  <div class="dropdown-divider"></div>
+                  <div class="d-md-flex align-items-start justify-content-start">
+                    <div>   
+                     <div class="dropdown-header">Our clubs</div>
+                     <a class="dropdown-item" href="#">Ada's club</a>
+                     <a class="dropdown-item" href="#">Aryabhatta club</a>
+                     <a class="dropdown-item" href="#">Iyal Isai Nadagam club </a>
+                     <a class="dropdown-item" href="#">Outreach club </a>
+                   </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item px-4">
+                <a href="#" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item px-4">
+                <a href="#" class="nav-link">Blog</a>
+              </li>
+           </ul>
+          </div>
+       </nav>
+       <!--manual slideshow-->
+       <div class="w3-content w3-display-container " style="max-width:1400px " >
+         <div class=" container mySlides">
+           <img class="im1" src="image (1).jpg"  >
+           <div class="info">"Travel with us to be amazed
+              by the next generation technology"
+            </div>
+          </div>
+          <div class=" container mySlides">
+           <img  class="im1" src="coding-man.jpg" >
+           <div class="info1">hhhhhhhhhhhhh</div>
+          </div>
+          <div class=" container mySlides">
+           <img  class="im1" src="image5 (2).jpg">
+           <div class="info2">hhhhhhhhhhhhh</div>
+          </div>
+          <div class=" container mySlides">
+            <img  class="im1" src="image5 (3).jpg"  >
+            <div class="info3">hhhhhhhhhhhhh</div>
+          </div>
+          <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+           <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+           <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+           <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+           <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+           <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+           <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+          </div>
+       </div>
+      </div> 
+    <!--About us-->
+   
+      <div class="aboutouter image " id="image1" >
+        <div class="about" data-aos="fade-left"  data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <div class="aboutbox">  About us</div>
+            <div class="aboutcontent">
+            <pre>this club.............
+            ...................................................
+            ...................................................</pre></div>
+          </div>
+ 
+        <div data-aos="fade-right" ><img class="adasclublogo " src="adasclublogo.jpg".jpg"   width="300px" height= "300px"></div>
+      </div>
+      
+      <div class="aboutouter image " id="image1" >
+       <div class="about" data-aos="fade-left"  data-aos-offset="300" data-aos-easing="ease-in-sine">
+         <div class="aboutbox"> Iconics:</div>
+           <div class="aboutcontent">
+           <pre>this club.............
+           ...................................................
+           ...................................................</pre></div>
+         </div> 
+       <div data-aos="fade-right" ><img class="adasclublogo " src="iconics.jpg"   width="300px" height= "300px"></div>
+     </div>
+    
+    <!--achivement-->
+    <div class="achivement panel " data-color="violet"  >
+      <div class="text">Achivement</div>
+      <div class="container2" >
+       <div class="card " data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+         <div class="card-header">
+           <img src="bg5.jpeg"  />
+         </div>
+         <div class="card-body">
+           <span class="tag tag-teal">achivement</span>
+           <h4>
+             achivement name
+           </h4>
+           <p>
+             achivement content.......................
+           </p>
+         </div>
+        </div>
+        <div class="card "  data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <div class="card-header">
+            <img src="bg3.jpg"  />
+          </div>
+          <div class="card-body">
+            <span class="tag tag-teal">achivement</span>
+            <h4>
+              achivement name
+            </h4>
+            <p>
+              achivement content.......................
+            </p>
+          </div>
+        </div>
+        <div class="card"  data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <div class="card-header">
+            <img src="bg2.webp"  />
+          </div>
+          <div class="card-body">
+            <span class="tag tag-teal">achivement</span>
+            <h4>
+              achivement name
+            </h4>
+            <p>
+              achivement content.......................
+            </p>
+          </div>
+        </div>
+        <div class="card panel" data-color="red"  data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <div class="card-header">
+            <img src="bg3.jpg"  />
+          </div>
+          <div class="card-body">
+            <span class="tag tag-teal">achivement</span>
+            <h4>
+              achivement name
+            </h4>
+            <p>
+              achivement content.......................
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <!--footer-->
+      <footer>
+       <div> 
+         <p>footer</p>
+       </div>  
+       <div class="content">
+          <div class="left box">
+            <div class="upper">
+              <div class="topic">Lot to know about us:</div>
+              <p>Our club is formed for students to students intiative.</p>
+            </div>
+            <div class="lower">
+              <div class="topic">Contact us</div>
+              <div class="email">
+                <div class="name">Iconics</div>
+                <a href="autmuducom2018@gmail.com"><i class="fas fa-envelope"></i>autmuducom2018@gmail.com</a>
+                <div class="name">Ada's club</div>
+                <a href="adasclubaurcm@gmail.com"><i class="fas fa-envelope"></i>adasclubaurcm@gmail.com</a>
+                <div class="name">Aryabhatta Club</div>
+                <a href="aryabattaclub@gmail.com"><i class="fas fa-envelope"></i>aryabattaclub@gmail.com</a>
+                <div class="name">Iyal Isai Nadagam Club</div>
+                <a href="iyalisainadagamclub@gmail.com"><i class="fas fa-envelope"></i>iyalisainadagamclub@gmail.com</a>
+                <div class="name">Outreach club</div>
+                <a href="outreachclub1@gmail.com"><i class="fas fa-envelope"></i>outreachclub1@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="middle box">
+            <div class="topic">Our Upcoming Works</div>
+            <div><a href="#">Upcoming Events</a></div>
+            <div><a href="#">Upcoming Competition </a></div>
+          </div>
+          <div class="right box">
+            <div class="topic">Subscribe us</div>
+            <form action="#">
+              <input type="text" placeholder="Enter email address">
+              <input type="submit" name="" value="Send">
+              <div class="media-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </footer>
+     
+    
+    
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+     <script src="js/bootstrap.min.js" type="text/javascript"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script src=”https://unpkg.com/aos@next/dist/aos.js”></script>
+     <script src="slideshow.js" type="text/javascript"></script>
+     <script src="web.js" type="text/javascript"></script>
+     <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

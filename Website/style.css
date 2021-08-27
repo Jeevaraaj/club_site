@@ -1,0 +1,464 @@
+
+*{ margin: 0;
+   
+}
+/*adas gif*/
+#gif1{
+    align-items: left;
+    position: relative;
+    top: 10px;
+    left: 50px;
+    margin: 0;
+}
+@media only screen and (max-width:640px) {
+  #gif1{align-items: center ;}
+}
+/*search button */
+form.search{ max-width: 200px;
+ position:absolute;
+top:50px;
+right: 20px;
+}
+form.search input[type=text] {
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.search button {
+  
+  width: 20%;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+
+form.search button:hover {
+  background: #0b7dda;
+}
+
+form.search::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* home */
+.home{ font-size: 18px;
+background-color: rgb(17, 15, 15);
+cursor: pointer;
+position:absolute;
+left:0;
+top:0;
+color: white;
+}
+.home :hover{
+  background-color: rgb(5, 21, 27);
+  color: rgb(173, 111, 60);
+}
+/*navigation bar*/
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
+.dropdown-item:hover{
+color: #101014;
+background-color: #0662eb;
+}
+.dropdown-menu{
+  margin-top: 0;
+  
+}
+.navbar-toggler{
+  color: #000;
+ position: absolute;
+ top:0;
+ right: 0;
+}
+.navbar-toggler-icon:hover{
+  color: #0b7dda;
+}
+@media  screen and (max-width:600px) {
+  .navbar-toggler-icon{color: black;
+  position: absolute;
+    right: 0;
+   top:0;}
+}
+
+
+#navbar1
+{   margin: 0px 10px 0px 10px;
+  position: relative;
+    border-radius: 2px;
+    height: 35px;
+    background-color: rgb(243, 243, 253);
+    box-shadow: 10px 10px 20px 10px rgba(90, 85, 81, 0.973) ;
+}
+.background{
+  background-color:rgb(0, 0, 0);
+  background-size: cover;
+  display: grid;
+  height: 650px;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+/*image manual slideshow starts*/
+
+
+.container{
+ position: relative;
+ top: -20px;
+ left:-100px;
+ height: 350px;
+
+}
+.im1{
+  width: 1310px;
+  height: 100%;
+}
+.info
+{
+  position: absolute;
+  top:80px;
+  left:40px;
+  text-align: justify;
+  font-family: 'Rancho', cursive;
+  font-size: 30px;
+   color: whitesmoke;
+   white-space: pre;
+}
+.info1
+{
+  position: absolute;
+  top:80px;
+  left:40px;
+  text-align: justify;
+  font-family: 'Crimson Pro', serif;
+  font-size: 30px;
+   color: whitesmoke;
+   white-space: pre;
+}
+@media screen and (max-width:600px) {
+  div.info {font-size: 10px ;
+   left: 20px;}
+ .container.im1{ width:  100px ; }
+}
+/*image manual slideshow ends*/
+/* about us font-family: 'Cinzel Decorative', cursive;
+font-family: 'Crimson Pro', serif;
+font-family: 'MonteCarlo', cursive;
+font-family: 'Niconne', cursive;
+font-family: 'Rancho', cursive;
+font-family: 'Rye', cursive*/
+.aboutouter{
+  display: grid;
+  grid-template-rows: 100px;
+  row-gap: 100px;
+  border:  solid rgb(0, 0, 0);
+  border-width: 0px 10px ;
+  border-bottom-width:10px solid white ;
+  width: 1347px;
+  height: 500px;
+  position: relative;
+  top: 20px;
+ box-sizing: border-box;
+}
+
+#image1{
+  background-image: url("bg6 (1).jpg");
+  background-attachment: fixed;
+}
+.about{
+  position: absolute;
+  right: 0;
+  left:350px;
+  top:100px;
+  padding:10px;
+  background-color: rgb(0, 82, 102);
+  border: solid rgb(26, 100, 236);
+  border-width: 10px 0px 10px 20px;
+  border-left-color: rgb(19, 5, 27);
+  text-align: justify;
+  border-top-left-radius:100px ;
+  z-index: 2;
+}
+
+.aboutbox{
+  z-index: 2;
+  font-family: 'Aclonica', sans-serif;
+  font-size: 50px;
+  text-align: right;
+  text-size-adjust: auto;
+  text-decoration-color: black;
+  color: #d9d9d9;
+  text-decoration-style: solid;
+  text-decoration-line: underline;
+  text-decoration-thickness: 10px;
+
+}
+.adasclublogo{
+  z-index: 2;
+  position: absolute;
+  left: 100px;
+  top: 40px;
+  border-radius: 200px 200px 200px 200px;
+  border: 2px solid tomato;
+}
+.aboutcontent{
+  z-index: 2;
+font-family: 'Charm', cursive;
+ font-size: 30px;
+}
+@media only screen and (max-width:560px) {
+  div.aboutouter{
+     width: 100%;
+
+  }
+  div.adasclublogo{ 
+    width: 100px;
+    
+  }
+}
+/* achievement box */
+.text{
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 40px ;
+  color: rgb(255, 255, 255);
+  margin:20px;
+}
+
+.achievement{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #10182f;
+ 
+}
+.container2 {
+  display: grid;
+  width: 1000px;
+  grid-template-columns: auto auto auto ;
+  grid: column gap 50px ;
+
+}
+.card {
+  margin: 60px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(16, 1, 32, 0.897);
+  overflow: hidden;
+  width: 300px;
+}
+.card-header img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  min-height: 250px;
+}
+
+.tag {
+  background: #cccccc;
+  border-radius: 50px;
+  font-size: 12px;
+  margin: 0;
+  color: #fff;
+  padding: 2px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.tag-teal {
+  background-color: #47bcd4;
+}
+.tag-purple {
+  background-color: #5e76bf;
+}
+.tag-pink {
+  background-color: #cd5b9f;
+}
+
+.card-body p {
+  font-size: 13px;
+  margin: 0 0 40px;
+}
+
+
+/* footer css starts */
+    #footerid{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins',sans-serif;
+      text-decoration: none;
+    }
+    footer{
+      width: 100%;
+      position: relative;
+      top: 800px;
+      bottom: 0;
+      left: 0;
+      background: #111;
+    }
+    footer .content{
+      max-width: 1350px;
+      margin: auto;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    footer .content p{
+      color: rgb(255, 255, 255);
+    }
+    footer .content a{
+      color:#d1bba2;
+    }
+    footer .name{
+      color: #d6e3f0;
+    }
+    footer .content .box{
+      width: 33%;
+      transition: all 0.4s ease;
+    }
+    footer .content .topic{
+      font-size: 22px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 16px;
+    
+    }
+    footer .content p{
+      text-align: justify;
+    }
+    footer .content .lower .topic{
+      margin: 24px 0 5px 0;
+    }
+    footer .content .lower i{
+      padding-right: 16px;
+    }
+    footer .content .middle{
+      padding-left: 80px;
+    }
+    footer .content .middle a{
+      line-height: 32px;
+    }
+    footer .content .right input[type="text"]{
+      height: 45px;
+      width: 100%;
+      outline: none;
+      color: #d9d9d9;
+      background: #000;
+      border-radius: 5px;
+      padding-left: 10px;
+      font-size: 17px;
+      border: 2px solid #222222;
+    }
+    footer .content .right input[type="submit"]{
+      height: 42px;
+      width: 100%;
+      font-size: 18px;
+      color: #fffdfd;
+      background: #eb2f06;
+      outline: none;
+      border-radius: 5px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      margin-top: 12px;
+      border: 2px solid #eb2f06;
+      transition: all 0.3s ease-in-out;
+    }
+    .content .right input[type="submit"]:hover{
+      background: none;
+      color:  #eb2f06;
+    }
+    footer .content .media-icons a{
+      font-size: 16px;
+      height: 45px;
+      width: 45px;
+      display: inline-block;
+      text-align: center;
+      line-height: 43px;
+      border-radius: 5px;
+      border: 2px solid #222222;
+      margin: 30px 5px 0 0;
+      transition: all 0.3s ease;
+    }
+    .content .media-icons a:hover{
+      border-color: #eb2f06;
+    }
+    footer a{
+      transition: all 0.3s ease;
+    }
+    footer a:hover{
+      color: #ec722b;
+    }
+    @media (max-width:1100px) {
+      footer .content .middle{
+        padding-left: 50px;
+      }
+    }
+    @media (max-width:950px){
+      footer .content .box{
+        width: 50%;
+      }
+      .content .right{
+        margin-top: 40px;
+      }
+    }
+    @media (max-width:560px){
+      footer{
+        position: relative;
+      }
+      footer .content .box{
+        width: 100%;
+        margin-top: 30px;
+      }
+      footer .content .middle{
+        padding-left: 0;
+      }
+    } 
+
+
+    body {
+      color: #000;
+      background-color: #ffffff;
+      transition: background-color 1s ease;
+    }
+    
+    .color-violet {
+      background-color: #7A4EAB;
+    }
+    .color-white {
+      background-color: #ffffff;
+    }
+    .color-indigo {
+      background-color: #4332CF;
+    }
+    .color-blue {
+      background-color: #2F8FED;
+    }
+    .color-green {
+      background-color: #4DCF42;
+    }
+    .color-yellow {
+      background-color: #FAEB33;
+    }
+    .color-orange {
+      background-color: #F19031;
+    }
+    .color-red {
+      background-color: #F2293A;
+    }
+ 
+  
