@@ -69,10 +69,10 @@ body{
 }
 .side{
     position: fixed;
-    margin-top: 63px;
+    margin-top: auto;
     height: 100%;
     transition: 1s;
-    left: -105px;
+    left: -110px;
     z-index: 1;
 }
 .side ul{
@@ -88,7 +88,7 @@ a{
     /* position: absolute;
     width: 100%; */
     overflow: hidden;
-    margin-top: 63px;
+    margin-top: 52px;
 }
 .img-profile{
     border-radius: 50%;
@@ -110,7 +110,7 @@ a{
 .eve{
     /* border: 0.5px solid #000; */
     border-radius: 5px;
-    background-color: #fff3;
+    background-color: #fff5;
     /* box-shadow: 10px 5px 20px 5px #000; */
     /* margin-bottom: 30px; */
     /* display: flex;
