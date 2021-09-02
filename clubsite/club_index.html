@@ -123,17 +123,17 @@
 <script>
     var left=getComputedStyle(document.querySelector('.side'))['left'];
     $('.menu-bar').click(()=>{
-        if(left=='-105px'){
+        if(left=='-110px'){
             left='0px';
             $('.side').css('left',left);
         }
         else if(left=='0px'){
-            left='-105px'
+            left='-110px'
             $('.side').css('left',left);
         }
     });
     $('.side .nav-link').click(()=>{
-        left='-105px'
+        left='-110px'
         $('.side').css('left',left);
     });
     $(document).ready(()=>{
