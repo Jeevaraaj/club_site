@@ -14,16 +14,16 @@
 </head>
 <body>
     <nav class="navbar bg-dark navbar-expand">
-        <div class="container-fluid header">
-            <button class="menu-bar">
+        <div class="container-fluid">
+            <div class="menu-bar">
                 <div class="bar"></div>
                 <div class="bar" style="margin: 3px 0 3px 0;"></div>
                 <div class="bar"></div>
-            </button>
+            </div>
             <!-- club icon -->
             <div id="club-icon"><img src="bing.png" class="img-thumbnail" alt=""></div>
             <!-- club name -->
-            <div class="navbar-header"><h2 class="nav-brand">Club_name</h2></div>
+            <div class="navbar-header"><h2 class="nav-brand">Club_name nafdgfdgsdfg</h2></div>
         </div>
         <div class="menus">
             <ul class="navbar-nav">
@@ -49,7 +49,6 @@
             <img class="img-fluid img-profile" src="bing.png" alt="">
         </div>
 
-        <hr>
             <div class="desc col-12">
                 <!-- club description -->
                 <h3>club description</h3>
@@ -122,6 +121,7 @@
 </body>
 <script>
     var left=getComputedStyle(document.querySelector('.side'))['left'];
+    var nav_height=getComputedStyle(document.querySelector('.navbar'))['height'];
     $('.menu-bar').click(()=>{
         if(left=='-110px'){
             left='0px';
@@ -150,6 +150,9 @@
                 // $(obj[index-1]).attr('data-aos-offset','300');
                 $(obj[index-1]).attr({'data-aos':'fade-left','data-aos-offset':'200'});
             }
+        }
+        if (nav_height == '100px') {
+            $('.content').css('margin-top','100px');
         }
     });
 
