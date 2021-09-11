@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="bootstrap.css">
+	<script src="jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<nav class="navbar fixed-top" style="background-color: #39f9">
+		<!-- user account icon -->
+		<img src="bing.png" alt="" class="img-thumbnail" data-toggle='modal' data-target='#menu_profile'>
+		<div class="navbar-brand" style="margin-right: auto;font-weight: bold">BELOG</div>
+	</nav>
+
+	<div class="container" style="overflow: hidden;margin-top: 60px;">
+		<div class="row">
+			<div class="col-md-6 col-lg-4" style="padding: 10px;">
+				<div class="card" id="card_belog" data-toggle="modal" data-target="#read_belog">
+					<p class="belog_content card-body">
+					    lorem ipsem is a good flower........lorem ipsem is a good flower........lorem ipsem is a good flower........
+                        lorem ipsem is a good flower........lorem ipsem is a good flower........lorem ipsem is a good flower........
+                        <!-- <span data-toggle="modal" data-target="#read_belog" style="color: blue;cursor:pointer;">Readmore</span> -->
+				    </p>
+				    <div class="card-footer">
+					    <h2 class="belog_title">Title</h2>
+					    <p class="posted_date">26th Aug 2021</p>
+				    </div>
+				</div>
+			</div>
+			
+			<div class="col-md-6 col-lg-4" style="padding: 10px;">
+				<div class="card" id="card_belog" data-toggle="modal" data-target="#read_belog">
+					<p class="belog_content card-body">
+					    lorem ipsem is a good flower........lorem ipsem is a good flower........lorem ipsem is a good flower........
+                        lorem ipsem is a good flower........lorem ipsem is a good flower........lorem ipsem is a good flower........
+                        <!-- <span data-toggle="modal" data-target="#read_belog" style="color: blue;cursor:pointer;">Readmore</span> -->
+				    </p>
+				    <div class="card-footer">
+					    <h2 class="belog_title">Title</h2>
+					    <p class="posted_date">26th Aug 2021</p>
+				    </div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-4" style="padding: 10px;">
+				<div class="card" id="card_belog" data-toggle="modal" data-target="#read_belog">
+					<p class="belog_content card-body">
+					    lorem ipsem is a good flower........lorem ipsem is a good flower........lorem ipsem is a good flower........
+                        lorem ipsem is a good flower........lorem ipsem is a good flower........lorem ipsem is a good flower........
+                        <!-- <span data-toggle="modal" data-target="#read_belog" style="color: blue;cursor:pointer;">Readmore</span> -->
+				    </p>
+				    <div class="card-footer">
+					    <h2 class="belog_title">Title</h2>
+					    <p class="posted_date">26th Aug 2021</p>
+				    </div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+  <button class="create-bar" data-toggle="modal" data-target="#createBelog">
+    <div class="bar" id="bar_vt"></div>
+    <div class="bar" id="bar_hz"></div>
+  </button>  
+
+  <!-- view belog when readmore is clicked -->
+  <div class="modal fade" id="read_belog" tabindex="-1" aria-labelledby="read_belogLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="read_belogLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          lorem ipsem is a good flower........lorem ipsem is a good flower........lorem ipsem is a good flower........
+          lorem ipsem is a good flower........lorem ipsem is a good flower........lorem ipsem is a good flower........
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editBelog" data-dismiss='modal'>Edit</button>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+  <!-- view profile menu when profile icon is clicked -->
+  <div class="modal fade" id="menu_profile" tabindex="-1" aria-labelledby="menu_profileLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-body" style="text-align: center;">
+          <img class="img-profile" src="bing.png" alt="">
+          <h5>User name</h5>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Logout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  <!-- edit belog when edit button is clicked -->
+  <div class="modal fade edit" id="editBelog" tabindex="-1" aria-labelledby="editBelogTitle" aria-hidden="true" style="height: 100%">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="editBelogTitle">
+            <label>Title : </label>
+            <input type="text" id="belogTitle" value="Modal title" style="border: none;">
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <textarea class="modal-body" name="editBelogArea" id="editBelogArea" rows="100%" style="border: none;">
+            lorem ipsem is a good flower........lorem ipsem is a good flower........lorem ipsem is a good flower........
+                lorem ipsem is a good flower........lorem ipsem is a good flower........lorem ipsem is a good flower........
+                lorem ipsem is a good flower........lorem ipsem is a good flower........lorem ipsem is a good flower........
+                lorem ipsem is a good flower........lorem ipsem is a good flower........lorem ipsem is a good flower........
+                lorem ipsem is a good flower........lorem ipsem is a good flower........lorem ipsem is a good flower........
+                lorem ipsem is a good flower........lorem ipsem is a good flower........lorem ipsem is a good flower........
+                lorem ipsem is a good flower........lorem ipsem is a good flower........lorem ipsem is a good flower........
+                lorem ipsem is a good flower........lorem ipsem is a good flower........lorem ipsem is a good flower........
+  
+  
+        </textarea>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#read_belog" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#read_belog" data-dismiss='modal'>Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- create belog when create button is clicked -->
+  <div class="modal fade" id="createBelog" tabindex="-1" aria-labelledby="createBelogTitle" aria-hidden="true" style="height: 100%">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="createBelogTitle">
+            <label>Title : </label>
+            <input type="text" id="belogTitle" value="Modal title" style="border: none;">
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <textarea class="modal-body" name="createBelogArea" id="createBelogArea" rows="100%" style="border: none;">
+  
+        </textarea>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="bootstrap.bundle.min.js"></script>
+<!-- 	<script src="docs.min.js"></script> -->
+<!-- <script>
+	$('.create-bar').click(()=>{
+		$('.bar').css('transform','rotate(45deg)');
+	});
+</script> -->
+</html>

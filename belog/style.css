@@ -1,0 +1,66 @@
+.img-thumbnail{
+    width: 40px;
+    height: 40px;
+    margin-right: 30px;
+    padding: 0;
+    border: 0.2px dotted white;
+    border-radius: 70%;
+}
+#card_belog{
+    cursor: pointer;
+}
+#card_belog:hover{
+    /* background-color: #f5a; */
+    background-color: var(--info);
+    z-index: auto;
+    color: white;
+}
+#belogTitle:focus{
+    outline: none;
+    border-bottom: 2px solid #0008;
+}
+#editBelogArea:focus{
+    outline: none;
+    border-bottom: 2px solid #0008;
+}
+#createBelogArea:focus{
+    outline: none;
+    border-bottom: 2px solid #0008;
+}
+.create-bar{
+    position: fixed;
+    cursor: pointer;
+    border: 1px solid #8889;
+    bottom: 60px;
+    right: 30px;
+    height: 45px;
+    padding: 10px;
+    border-radius: 20%;
+    background-color: #39f;
+}
+.create-bar:focus{
+    outline: none;
+}
+.bar{
+    width: 20px;
+    height: 3px;
+    background-color: #222;
+}
+#bar_vt{
+    transform: rotate(90deg);
+    margin-bottom: -4px;
+    /* background-color: #ff0; */
+}
+#bar_hz{
+    /* background-color: #f00; */
+}
+.img-profile{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 2px solid #1119;
+    margin: 20px;
+}
+.img-thumbnail:hover{
+    cursor: pointer;
+}
