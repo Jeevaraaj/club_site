@@ -61,6 +61,11 @@ body{
 @media (max-width: 512px){
     #club-icon{
         margin-left:10px;
+        display: none;
+    }
+    .navbar-header{
+        margin:auto;
+        text-align: center;
     }
     .img-thumbnail{
         margin-right: 10px;
@@ -73,9 +78,10 @@ body{
 }
 .side{
     position: fixed;
+    background-color: #343a40 !important;
     margin-top: auto;
     height: 100%;
-    left: -110px;
+    left: -130px;
     transition: 0.5s;
     z-index: 1;
 }
