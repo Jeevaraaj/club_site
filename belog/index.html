@@ -9,11 +9,22 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<nav class="navbar fixed-top" style="background-color: #39f9">
+	<nav class="navbar fixed-top" style="background-color: #39f">
 		<!-- user account icon -->
 		<img src="bing.png" alt="" class="img-thumbnail" data-toggle='modal' data-target='#menu_profile'>
 		<div class="navbar-brand" style="margin-right: auto;font-weight: bold">BELOG</div>
 	</nav>
+
+  <div class="side_nav">
+    <div type="button" class="btn btn-secondary close_side">X</div>
+    <div class="body" style="text-align: center;">
+      <img class="img-profile" src="bing.png" alt="">
+      <h5>User name</h5>
+    </div>
+    <div class="footer" style="text-align: center;">
+      <button type="button" class="btn btn-primary">Logout</button>
+    </div>
+  </div>
 
 	<div class="container" style="overflow: hidden;margin-top: 60px;">
 		<div class="row">
@@ -60,12 +71,11 @@
 			</div>
 
 		</div>
-	</div>
-
-  <button class="create-bar" data-toggle="modal" data-target="#createBelog">
-    <div class="bar" id="bar_vt"></div>
-    <div class="bar" id="bar_hz"></div>
-  </button>  
+    <button class="create-bar" data-toggle="modal" data-target="#createBelog">
+      <div class="bar" id="bar_vt"></div>
+      <div class="bar" id="bar_hz"></div>
+    </button>
+	</div>  
 
   <!-- view belog when readmore is clicked -->
   <div class="modal fade" id="read_belog" tabindex="-1" aria-labelledby="read_belogLabel" aria-hidden="true">
@@ -88,22 +98,6 @@
       </div>
     </div>
   </div>  
-
-  <!-- view profile menu when profile icon is clicked -->
-  <div class="modal fade" id="menu_profile" tabindex="-1" aria-labelledby="menu_profileLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-body" style="text-align: center;">
-          <img class="img-profile" src="bing.png" alt="">
-          <h5>User name</h5>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Logout</button>
-        </div>
-      </div>
-    </div>
-  </div>
     
   <!-- edit belog when edit button is clicked -->
   <div class="modal fade edit" id="editBelog" tabindex="-1" aria-labelledby="editBelogTitle" aria-hidden="true" style="height: 100%">
@@ -165,9 +159,30 @@
 </body>
 <script src="bootstrap.bundle.min.js"></script>
 <!-- 	<script src="docs.min.js"></script> -->
-<!-- <script>
-	$('.create-bar').click(()=>{
-		$('.bar').css('transform','rotate(45deg)');
-	});
-</script> -->
+<script>
+  var left=getComputedStyle(document.querySelector('.side_nav'))['left'];
+  $('.img-thumbnail').click(()=>{
+        if(left=='-200px'){
+            side_open();
+        }
+    });
+    $('.close_side').click(()=>{
+        if(left=='0px'){
+            side_close();
+        }
+    });
+
+    function side_close(){
+        $('.container').css('opacity','1');
+            left='-200px';
+            $('.side_nav').css('left',left);
+    }
+    
+    function side_open(){
+        //$('.container').css('opacity','0.5');
+        $('.container').css('opacity','0.3');
+        left='0px';
+        $('.side_nav').css('left',left);
+    }
+</script>
 </html>
